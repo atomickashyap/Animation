@@ -1,0 +1,70 @@
+body{
+     background-color:#000033;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#pageloader
+{
+    width: 150px;
+    height: 150px;   
+}
+#pageloader circle{
+    fill:none;
+    stroke-width: 10;
+    stroke-linecap: round;
+}
+#pageloader circle:nth-child(1){
+    stroke: #ffc114;
+    stroke-dasharray: 50;
+}
+    #pageloader circle:nth-child(2){
+    stroke: #ff5248;
+    stroke-dasharray: 50;
+    }
+    #pageloader circle:nth-child(3){
+    stroke: #19cdca;
+    stroke-dasharray: 50;
+    }
+    #pageloader circle:nth-child(4){
+    stroke: #4e80e1;
+    stroke-dasharray: 50;
+    }
+@keyframes loader{
+    50%{
+       transform: rotate(360deg);
+    }
+}
+#pageloader circle{
+    animation-name:loader;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform-origin:center center;
+}
+
+    #pageloader circle:nth-child(1){
+        animation-delay: -.2s
+    }
+    #pageloader circle:nth-child(2){
+        animation-delay: -.4s
+    }
+    #pageloader circle:nth-child(3){
+        animation-delay: -.6s
+    }
+    #pageloader circle:nth-child(4){
+        animation-delay: -.8s
+    }
+
+
+
+
+
+
+
+
+
+
